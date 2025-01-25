@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Tailwind CSS</title>
     <!-- <link rel="stylesheet" href="dist/output.css" /> -->
-    <link rel="stylesheet" href="dist/css/final.css">
+    <link rel="stylesheet" href="dist/css/final.css" />
     <script>
         document.documentElement.classList.toggle(
-            'dark',
-            localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-        )
+            "dark",
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches),
+        );
     </script>
 </head>
 
@@ -58,10 +60,10 @@
                                 <a href="#contact"
                                     class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
                             </li>
-                            <li class="mt-3 lg:mt-0 flex items-center pl-8">
+                            <li class="mt-3 flex items-center pl-8 lg:mt-0">
                                 <div class="flex">
                                     <span class="mr-2 text-sm text-slate-500">light</span>
-                                    <input type="checkbox" id="dark-toggle" class="hidden">
+                                    <input type="checkbox" id="dark-toggle" class="hidden" />
                                     <label for="dark-toggle">
                                         <div
                                             class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
@@ -92,7 +94,8 @@
                             Herfansya</span>
                     </h1>
                     <h2 class="mb-5 text-lg font-medium text-secondary">
-                        Web <span class="text-dark lg:text-2xl dark:text-white">Programming</span>
+                        Web
+                        <span class="text-dark lg:text-2xl dark:text-white">Programming</span>
                     </h2>
                     <p class="mb-10 font-medium leading-relaxed text-secondary">
                         Belajar Web Programming itu mudah dan menyenangkan bukan.
@@ -238,7 +241,9 @@
                     <div class="overflow-hidden rounded-md shadow-md">
                         <img src="dist/img/2.jpg" alt="Meeting" class="w-full" />
                     </div>
-                    <h2 class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white">Hard Work</h2>
+                    <h2 class="mb-3 mt-5 text-xl font-semibold text-dark dark:text-white">
+                        Hard Work
+                    </h2>
                     <p class="text-base font-medium text-secondary">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
                         obcaecati.
@@ -554,8 +559,8 @@
 
     <!-- Back to top Start -->
     <a href="#home" id="to-top"
-        class="fixed hidden justify-center items-center bottom-4 right-4 z-[9999] h-14 w-14 bg-primary rounded-full p-4 hover:animate-pulse">
-        <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+        class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
+        <span class="mt-2 block h-5 w-5 rotate-45 border-l-2 border-t-2"></span>
     </a>
     <!-- Back to top End -->
 
